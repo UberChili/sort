@@ -53,6 +53,25 @@ int main(void)
 	printf ("Enter an algorithm to use: ");
 	int selection = GetInt();
 
+	switch (selection)
+	{
+		case 1 :
+			bubble();
+			break;
+
+		case 2 :
+			insertion();
+			break;
+
+		case 3 :
+			quick();
+			break;
+
+		case 4 : 
+			merge();
+			break;
+	}
+
 	// Making some more space
 	printf ("\nSorting... \n");
 }
