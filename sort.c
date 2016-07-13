@@ -12,6 +12,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+#include "helpers.h"
+
 // maximum size of array
 const int MAX = 65536;
 
@@ -56,19 +58,19 @@ int main(void)
 	switch (selection)
 	{
 		case 1 :
-			bubble();
+			bubble(haystack, size);
 			break;
 
 		case 2 :
-			insertion();
+			insertion(haystack, size);
 			break;
 
 		case 3 :
-			quick();
+			quick(haystack, size);
 			break;
 
 		case 4 : 
-			merge();
+			merge(haystack, size);
 			break;
 	}
 

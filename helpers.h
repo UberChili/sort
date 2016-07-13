@@ -9,13 +9,13 @@
 #include <cs50.h>
 
 // Bubble Sort
-void bubble(int value, int n);
+void bubble(int values[], int n);
 
 // Insertion Sort
-void insertion(int value, int n);
+void insertion(int values[], int n);
 
 // Quick Sort
-void quick(int value, int n);
+void quick(int values[], int n);
 
 // Merge Sort
-void merge(int value, int n);
+void merge(int values[], int n);
