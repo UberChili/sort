@@ -9,7 +9,7 @@
 
 #include "helpers.h"
 
-void bubble(int values[], int n)
+void heap(int values[], int n)
 {
 	// TODO
 }

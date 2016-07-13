@@ -47,7 +47,7 @@ int main(void)
 
 	// Prompt user for sorting algorithm to use
 	printf ("Sorting algorithms available:\n");
-	printf ("1. Bubble Sort\n");
+	printf ("1. HeapSort\n");
 	printf ("2. Insertion Sort\n");
 	printf ("3. Quick Sort\n");
 	printf ("4. Merge Sort\n");
@@ -58,7 +58,7 @@ int main(void)
 	switch (selection)
 	{
 		case 1 :
-			bubble(haystack, size);
+			heap(haystack, size);
 			break;
 
 		case 2 :

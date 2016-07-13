@@ -9,7 +9,7 @@
 #include <cs50.h>
 
 // Bubble Sort
-void bubble(int values[], int n);
+void heap(int values[], int n);
 
 // Insertion Sort
 void insertion(int values[], int n);
