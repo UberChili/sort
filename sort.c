@@ -58,22 +58,28 @@ int main(void)
 	switch (selection)
 	{
 		case 1 :
+			printf ("\nSorting... \n");
+			printf ("\nFinished sorting!\n");
 			heap(haystack, size);
 			break;
 
 		case 2 :
+			printf ("\nSorting... \n");
+			printf ("Finished sorting!\n");
 			insertion(haystack, size);
 			break;
 
 		case 3 :
+			printf ("\nSorting... \n");
+			printf ("Finished sorting!\n");
 			quick(haystack, size);
 			break;
 
 		case 4 : 
+			printf ("\nSorting... \n");
+			printf ("Finished sorting!\n");
 			merge(haystack, size);
 			break;
 	}
 
-	// Making some more space
-	printf ("\nSorting... \n");
 }

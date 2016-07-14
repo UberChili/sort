@@ -6,6 +6,7 @@
  */
 
 #include <cs50.h>
+#include <stdio.h>
 
 #include "helpers.h"
 
@@ -16,22 +17,26 @@ void heap(int values[], int n)
 
 void insertion(int values[], int n)
 {
-	int j;
-
-	for (int i = 2; i < n; i++)
+	for (int j = 1; j < n; j++)
 	{
-		int key = values[i];
+		int key = values[j];
 
-		//insert values[i] into the sorted sequence values[1.. j - 1].
-		j = i - 1;
+		//insert values[j] into the sorted sequence values[1.. j - 1].
+		int i = j - 1;
 
-		while ( j > 0 && values[j] > key)
+		while ( i > 0 && values[i] > key)
 		{
-			values[j + 1] = values[j];
-			j = j - 1;
+			values[i + 1] = values[i];
+			i = i - 1;
 		}
 
-		values[j + 1] = key;
+		values[i + 1] = key;
+	}
+	
+	// print the array
+	for (int i = 0; i < n; i++)
+	{
+		printf("array[%d] = [%d]\n", i, values[i]);
 	}
 }
 
