@@ -24,7 +24,7 @@ void insertion(int values[], int n)
 		//insert values[j] into the sorted sequence values[1.. j - 1].
 		int i = j - 1;
 
-		while ( i > 0 && values[i] > key)
+		while ( i >= 0 && values[i] > key)
 		{
 			values[i + 1] = values[i];
 			i = i - 1;
